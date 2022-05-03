@@ -27,6 +27,8 @@
     
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     
 </head>
 
@@ -245,10 +247,10 @@
                 <div class="col-lg-6">
                     <div class="download-content mt-45 wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
                         <h3 class="download-title">Tải về</h3>
-                        <p class="text">Hãy tải về và trải nghiệm ngay không gian thời gian ngay tại nhà của bạn</p>
+                        <p class="text">Hãy tải về và trải nghiệm ngay không gian thời trang ngay tại nhà của bạn</p>
                         <ul>
-                            <li><a class="app-store" href="https://www.facebook.com/huytuong010101/"><img src="assets/images/app-store.png" alt="store"></a></li>
-                            <li><a class="play-store" href="https://www.facebook.com/huytuong010101/"><img src="assets/images/play-store.png" alt="store"></a></li>
+                            <li><a class="app-store" onclick="alert_download()"><img src="assets/images/app-store.png" alt="store"></a></li>
+                            <li><a class="play-store" onclick="alert_download()"><img src="assets/images/play-store.png" alt="store"></a></li>
                         </ul>
                     </div> <!-- download image -->
                 </div>
@@ -325,14 +327,14 @@
                                 <li>
                                     <div class="contact-info d-flex">
                                         <div class="info-content media-body">
-                                            <p class="text"><i class="lni lni-phone"></i> +84965223769</p>
+                                            <p class="text"><i class="lni lni-phone"></i> 19006969</p>
                                         </div>
                                     </div> <!-- contact info -->
                                 </li>
                                 <li>
                                     <div class="contact-info d-flex">
                                         <div class="info-content media-body">
-                                            <p class="text"><a href="#"><i class="lni lni-envelope"></i> contact@clex.com</a></p>
+                                            <p class="text"><a href="#"><i class="lni lni-envelope"></i> contact@clex.cf</a></p>
                                         </div>
                                     </div> <!-- contact info -->
                                 </li>
@@ -412,6 +414,7 @@
     
     <!--====== WOW js ======-->
     <script src="assets/js/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
     
     <!--====== Scrolling Nav js ======-->
@@ -420,7 +423,11 @@
     
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
-    
+    <script>
+        const alert_download = () =>{
+            toastr.warning("Ứng dụng đang được phát triển")
+        }
+    </script>
 </body>
 
 </html>
